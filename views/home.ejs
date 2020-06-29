@@ -4,7 +4,8 @@
 
 <% posts.forEach(function(element) { %>
   <h2><%= element.postTitle %></h2>
-  <p><%= element.postBody %></p>
+  
+  <p><%= element.postBody.slice(0,100)+" ..." %><a href="posts/<%= element.postTitle %>">Read More</a></p>
   
 <% }); %>
 
