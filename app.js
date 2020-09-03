@@ -42,7 +42,7 @@ app.get("/",function(req, res){
     if(!err) {
       
       res.render("home",{ homeStartingContent : homeStartingContent, posts: foundPost});  
-       
+      
     }
     
   });  
